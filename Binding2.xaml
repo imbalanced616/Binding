@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingApp.Binding2"
+             Title="Binding2">
+    <StackLayout Padding="20">
+        <Entry WidthRequest="300" HeightRequest="20" Margin="5" x:Name="entryBox1" />
+        <Entry WidthRequest="300" HeightRequest="20" Margin="5" x:Name="entryBox2" />
+        <Entry WidthRequest="300" HeightRequest="20" Margin="5" x:Name="entryBox3" />
+        <Button WidthRequest="150" HeightRequest="45" Margin="5" Text="Поменять" Clicked="Button_Clicked"/>
+        <Label WidthRequest="300" HeightRequest="20" Margin="5" Background="White" TextColor="Black" BindingContext="{x:Reference entryBox1}" Text="{Binding Text}" />
+        <Label WidthRequest="300" HeightRequest="20" Margin="5" Background="White" TextColor="Black" BindingContext="{x:Reference entryBox2}" Text="{Binding Text}" />
+        <Label WidthRequest="300" HeightRequest="20" Margin="5" Background="White" TextColor="Black" BindingContext="{x:Reference entryBox3}" Text="{Binding Text}" />
+    </StackLayout>
+</ContentPage>

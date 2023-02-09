@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BindingApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BindingApp"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent Title="Binding1" ContentTemplate="{DataTemplate local:Binding1}" Route="Binding1" />
+        <ShellContent Title="Binding2" ContentTemplate="{DataTemplate local:Binding2}" Route="Binding2" />
+        <ShellContent Title="Binding3" ContentTemplate="{DataTemplate local:Binding3}" Route="Binding3" />
+        <ShellContent Title="Binding4" ContentTemplate="{DataTemplate local:Binding4}" Route="Binding4" />
+    </TabBar>
+</Shell>
